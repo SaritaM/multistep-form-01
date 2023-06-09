@@ -1,0 +1,12 @@
+form {
+	input {
+		border: 1px solid $dark-color;
+		font-family: $body-font;
+		font-size: 16px;
+		padding: 8px;
+
+		&.invalid {
+			border: 1px solid red;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+.button,
+button {
+	background-color: $dark-color;
+	border: 2px solid $dark-color;
+	color: $light-color;
+	transition: all .5s ease;
+	padding: 8px 16px;
+	font-size: 16px;
+	font-family: $body-font;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+
+	&:hover {
+		background-color: $light-color;
+		color: $dark-color;
+	}
+
+	&.secondary {
+		background-color: $light-color;
+		color: $dark-color;
+
+		&:hover {
+			background-color: $dark-color;
+			color: $light-color;
+		}
+	}
+
+	&:disabled {
+		background-color: gray;
+		border: 2px solid gray;
+		color: rgba(#fff, .5);
+		cursor: default;
+
+		&:hover {
+			background-color: gray;
+			color: rgba(#fff, .5);
+			cursor: default;
+		}
+	}
+}

@@ -1,0 +1,8 @@
+.container {
+	background-color: white;
+	padding: 16px 0 16px 16px;
+	border-radius: 8px;
+	display: grid;
+	grid-template-columns: 275px 1fr;
+	min-height: 600px;
+}

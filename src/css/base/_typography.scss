@@ -1,0 +1,66 @@
+body {
+	font-family: $body-font;
+	font-weight: 400;
+	line-height: 1.5;
+	font-size: 16px;
+	color: $text-color;
+}
+
+h1,
+h2,
+.h2 {
+	font-family: $heading-font;
+	line-height: 1;
+	color: $dark-color;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 72px;
+
+	@media screen and (max-width: 550px) {
+		font-size: 48px;
+	}
+}
+
+h2,
+.h2 {
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+a {
+	color: $dark-color;
+	transition: all .5s ease;
+
+	&:hover {
+		color: $text-color;
+		text-decoration: none;
+	}
+}
+
+// pre-headline
+.pre-headline {
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+hr {
+	border-width: 0;
+	margin: 0;
+
+	&::after {
+		content: '';
+		position: absolute;
+		display: block;
+		left: 50%;
+		transform: translateX(-50%);
+		height: 1px;
+		width: 80%;
+		background-color: $light-color;
+	}
+}

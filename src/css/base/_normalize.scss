@@ -1,0 +1,37 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: lightcyan;
+}
+
+.wrap {
+	width: 1280px;
+	margin: auto;
+
+	@media screen and (max-width: $content) {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+// remove horizontal scroll for mobile menu
+@media screen and (max-width: $mobile) {
+	body {
+		overflow-x: hidden;
+	}
+}
+
+// Page height default
+#__next {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	footer {
+		margin-top: auto;
+	}
+}
